@@ -1,11 +1,9 @@
-//SOLICITAR MODULO INTERNO DO NODE CHAMADO HTTP
+//solicitar um módulo interno do node chamado http
+var http = require('http')
 
-var Http = require('http')
-
-//ABRINDO UM SERVIDOR HTTP
-
-Http.createServer(function(req,res){
-    res.end('O dia que um dos drake perder pra spin vai virar muchilinha pra dar uma refletida')
+//abrindo um servidor http
+http.createServer(function(req, res){
+    res.end("Hello Etec MCM")
 }).listen(8081)
 
-console.log('Servidor rodando...')
+console.log('SERVIDOR ESTÁ RODANDO')
